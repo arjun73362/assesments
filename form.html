@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom:1px solid black;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.div1{
+	width: 500px;
+	height: 800px;
+	border-radius: 10px;
+	border:1px solid grey;
+	margin-top: 20px !important; 
+	background-color: grey;
+	margin: 0 auto
+}
+.div2{
+	width:500px;
+	height: 70px;
+	background-color: grey;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.div3{
+	width:500px;
+	height: 660px;
+	background-color: white;
+}
+.div4{
+	width:500px;
+	height: 70px;
+	background-color: grey;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.file{
+	float: left;
+	width: 440px;
+	background-color: white;
+	border:1px solid black;
+	color: black;
+	display: inline-block;
+	margin-left: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+/*.file input{
+	align-self: right;
+	border-radius: 5px;
+	padding: 3px;
+	width: 10%;
+	background-color: grey;
+	color: white;
+}*/
+/*input[type=button]{
+	align-self: right;
+	margin-left:229px;
+	padding: 15px;
+	background-color: green;
+	color: white;
+	width: 25%;
+	border-radius: 5px;
+	text-decoration: none;
+}*/
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Choose files';
+  color: white;
+  display: inline-block;
+  background: grey;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width:90px;
+  height: 35px;
+  float:right;
+  text-align:center;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+</style>
+</head>
+<body>
+	<ul>
+	  <li><a href="#home"><h1 style="color: #5aa38c;">To The New</h1></a></li>
+	  <li style="float: right;"><a href="#contact" ><h3 style="color: #5aa38c;">Home</h3></a></li>
+	  <li style="float:right"><a class="active" href="#about"><h3  style="color: #5aa38c;">About</h3></a></li>
+	</ul>
+	<div class="div1">
+		<div class="div2"><span style="color:white;margin-left:0px;margin-top:5px;font-size:20px;display:inline-block;padding:20px">Bug Report</span>
+		<div class="div3">
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Title:*</span><br>
+			<input style="margin-left: 20px;display:inline-block;margin-top: 10px;border-radius: 5px;width: 80%;padding: 12px 20px;"><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Description:*</span><br>
+			<textarea style="margin-left: 20px;display:inline-block;margin-top: 10px;;border-radius: 5px;width: 80%;padding: 12px 20px;"></textarea><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Operating System:*</span><br>
+			<select id="OS" style="margin-left: 20px;display:inline-block;margin-top: 10px;;border-radius: 5px;width: 88%;padding: 12px 20px;background-color: #5aa38c;color: white">
+			  <option value="volvo" >Windows XP</option>
+			  <option value="saab">Windows Vista</option>
+			  <option value="opel">Ubuntu</option>
+			  <option value="audi">Linux</option>
+			</select><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Product:*</span><br>
+			<select id="OS" style="margin-left: 20px;display:inline-block;margin-top: 10px;;border-radius: 5px;width: 88%;padding: 12px 20px;background-color: #5aa38c;color: white">
+			  <option value="volvo">Formoid</option>
+			  <option value="saab">Apple</option>
+			  <option value="opel">Dell</option>
+			  <option value="audi">Lenovo</option>
+			</select><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Version:*</span><br>
+			<input style="margin-left: 20px;display:inline-block;margin-top: 10px;border-radius: 5px;padding: 12px 20px;"><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">License:*</span><br>
+			<input type="radio" name="License" value="0" style="margin-left: 20px;display:inline-block;margin-top: 10px;"> Free
+  			<input type="radio" name="License" value="1" style="margin-left: 80px;display:inline-block;margin-top: 10px;"> Business<br>
+  			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Severity:*</span><br>
+			<select id="OS" style="margin-left: 20px;display:inline-block;margin-top: 10px;;border-radius: 5px;width: 88%;padding: 12px 20px;background-color: #5aa38c;color: white">
+			  <option value="volvo">Critical</option>
+			  <option value="saab">Serious</option>
+			  <option value="opel">Normal</option>
+			  <option value="audi">Not so serious</option>
+			</select><br>
+			<span style="margin-left: 20px;display:inline-block;margin-top: 10px;">Attachments:*</span><br>
+			<div class="file">
+				<span style="float:left;width: 187px;margin-top: 10px;">No file selected</span><input type="file" class="custom-file-input">
+			</div>
+		</div>
+		<div class="div4">
+			<input type="submit" name="" style="margin-left:400px;margin-top:15px;font-size:20px;border-radius: 7px;display:inline-block;padding:10px;background-color: green;color: white">
+		</div>
+	</div>
+</body>
+</html>
