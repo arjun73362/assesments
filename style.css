@@ -1,0 +1,53 @@
+body{
+	background-color:black;
+}
+.header1{
+	background-color: #2b2625;
+}
+.navbar{
+	max-width:960px;
+	margin:0 auto;
+	background-color: black;
+}
+.section1{
+	max-width: 960px;
+	margin-bottom: 20px;
+	background-color: #2b2625;
+}
+.box1{
+	height: 360px;
+	padding-top:150px;
+}
+.section2{
+	max-width: 960px;
+	margin-bottom: 20px;
+	background-color:#d4cdcb;
+}
+.section3{
+	max-width: 960px;
+	margin-bottom: 20px;
+}
+hr{
+	border-top: 1px solid black;
+	border-width: 2px;
+}
+.box3{
+	max-width: 215px;
+	height: 315px;
+	border-style: double;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.cbox3{
+	max-width: 215px;
+	height: 280px;
+	padding-top: 125px;
+	background-color: #2b2625;
+}
+.ccbox3{
+	padding-top: 5px;
+	background-color:#d4cdcb;
+}
+.footer1{
+	background-color: #2b2625;
+}
