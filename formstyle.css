@@ -7,5 +7,6 @@
 hr{
 	max-width: 95%;
 }
-.footer1{
+.custom-file-label::after{
+	content: "Choose File";
 }
