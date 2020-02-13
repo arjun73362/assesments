@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+  	<meta charset="utf-8">
+	<link rel="stylesheet" href="formstyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="m-0 p-0">
+		<nav class="navbar navbar-expand-sm">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#"><h1>To The New</h1></a>
+		    </div>
+		    <ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link h1" href="#">Home</a></li>
+				<li class="nav-item"><a class="nav-link h1" href="#">Quick Help</a></li>
+			</ul>
+		  </div>
+		</nav>
+		<hr class="mx-auto">
+		<!-- <div class="container">
+			<div class="w-50 border border-primary mx-auto rounded">
+				<div class="header1 mw-50 p-1 pt-3 rounded bg-secondary text-light"><h1>Bug Report</h1></div>
+			</div>
+			<div class="section1"></div>
+			<div class="footer1"></div>
+		</div> -->
+		<div class="container w-50 p-0 border border-secondary rounded">
+		  <h2 class="bg-secondary text-light rounded-top p-3">Bug Report</h2>
+		  <form action="/action_page.php">
+		    <div class="form-group pl-3 pr-3">
+		      <label for="title">Title:*</label>
+		      <input type="name" class="form-control">
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="pwd">Description:*</label>
+		      <textarea class="form-control" rows="4" cols="50"></textarea>
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="pwd">Operating System:*</label>
+		      <select name="os" class="form-control f1 text-light">
+			    <option value="volvo text-light">Windows</option>
+			    <option value="saab text-light">Linux</option>
+			    <option value="fiat text-light">Ios</option>
+			    <option value="audi text-light">Android</option>
+			  </select>
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="pwd">Product:*</label>
+		      <select name="os" class="form-control f1 text-light">
+			    <option value="volvo">Formoid</option>
+			    <option value="saab">Linux</option>
+			    <option value="fiat">Ios</option>
+			    <option value="audi">Android</option>
+			  </select>
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="title">Version:*</label>
+		      <input type="name" class="form-control w-25">
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="License">License:*</label><br>
+		      <input type="radio" name="License" value="Free">
+			  <label for="Free">Free</label>
+			  <input type="radio" name="License" class="ml-5 pl-5" value="Business">
+			  <label for="Business">Business</label>
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="pwd">Security:*</label>
+		      <select name="os" class="form-control f1 text-light">
+			    <option value="volvo">Critical</option>
+			    <option value="saab">Linux</option>
+			    <option value="fiat">Ios</option>
+			    <option value="audi">Android</option>
+			  </select>
+		    </div>
+		    <div class="form-group pl-3 pr-3">
+		      <label for="pwd">Attachments:*</label>
+			    <div class="input-group">
+				  <div class="custom-file">
+				    <input type="file" class="custom-file-input" lang="es">
+				    <label class="custom-file-label">No File Selected</label>
+				  </div>
+				</div>
+			</div>
+		    <div class="footer1 col-auto bg-secondary text-light rounded-bottom p-3 d-flex justify-content-end">
+		    	<button type="submit" class="btn pull-right text-light f1">Submit</button>
+		    </div>
+		  </form>
+		</div>
+</body>
+</html> 
