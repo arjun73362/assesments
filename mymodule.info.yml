@@ -1,0 +1,4 @@
+name: my first custom module
+type: module
+core: 8.x
+description: My custom Form

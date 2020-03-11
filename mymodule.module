@@ -1,0 +1,51 @@
+<?php
+/**
+ * Implementation of hook_form_alter
+ */
+function mymodule_update_1(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+      \Drupal\field\Entity\FieldStorageConfig::create(array(
+        'field_name' => 'field_arjun',
+        'entity_type' => 'node',
+        'type' => 'text',
+        'cardinality' => -1,
+      ))->save();
+
+      \Drupal\field\Entity\FieldConfig::create([
+        'field_name' => 'field_arjun',
+        'entity_type' => 'node',
+        'bundle' => 'book',
+        'label' => 'Arjun',
+      ])->save();
+
+      entity_get_form_display('node', 'book', 'default')
+        ->setComponent('field_arjun', array(
+          'type' => 'text_textfield',
+        ))
+        ->save();
+
+      entity_get_display('node', 'book', 'default')
+        ->setComponent('field_arjun', array(
+          'type' => 'text_default',
+        ))
+        ->save();
+}
+function mymodule_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  if ($form_id=='node_book_form') {
+    $form['#validate'][] = 'arjun';
+    // kint($form['#validate']);
+    
+    // die;
+  }
+}
+function arjun($form, \Drupal\Core\Form\FormStateInterface $form_state){
+  // kint($form_state->getValue('field_arjun'));die;
+  $val1=$form_state->getValue('field_arjun')[0]['value'];
+  // kint($val1);die;
+  if(!preg_match("/^[A-Z][a-zA-Z]$/", $val1)){
+    // kint($val1);die;
+    $form_state->setErrorByName('field_arjun', t('Name must start with capital letter'));
+  }
+  // die;
+}
