@@ -1,0 +1,5 @@
+<?php
+function demo_preprocess_node(&$variables){
+  $node = $variables['node'];
+  $variables['user_field_full_name'] = $node->getOwner()->getDisplayName();
+}
