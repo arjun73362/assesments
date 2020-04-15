@@ -1,0 +1,8 @@
+{% set imagestyle = {
+  '#theme':      'image_style',
+  '#style_name': 'medium',
+  '#uri':        node.field_image['0'].entity.uri.value,
+  '#alt':        node.field_image['0'].alt,
+  '#attributes': { class: 'swiper-image' },
+} %}
+{{ imagestyle }}

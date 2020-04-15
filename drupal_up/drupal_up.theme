@@ -1,0 +1,8 @@
+<?php
+function drupal_up_theme_suggestions_page_title_alter(array &$suggestions, array $variables, $hook) 
+{
+  if($hook == 'page_title')
+  {
+    $suggestions[] = 'page__title__arjun';
+  }
+}
